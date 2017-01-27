@@ -60,6 +60,12 @@ body {
   padding: 20px 0;
 }
 
+.header__content {
+  -webkit-box-shadow: 0px 0px 4px 0px #000103;
+  -moz-box-shadow: 0px 0px 4px 0px #000103;
+  box-shadow: 0px 0px 4px 0px #000103;
+}
+
 .logo__link {
   display: block;
   max-width: 259px;
@@ -268,7 +274,7 @@ body {
 .categ__item {
   background-color: #f5f5f5;
   width: 100%;
-  height: 340px;
+  height: 250px;
   position: relative;
   display: block;
   margin-bottom: 24px;
@@ -321,6 +327,9 @@ body {
   font-size: 24px;
   color: #000;
   text-transform: uppercase;
+  -webkit-transition: all 0.5s ease-in-out;
+  -moz-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
 }
 
 .categ__item-description {
@@ -460,4 +469,201 @@ body {
   font-size: 14px;
   line-height: 53px;
   text-align: center;
+}
+
+.page__title {
+  color: #000;
+  font-size: 24px;
+  line-height: 24px;
+  display: block;
+  padding-top: 35px;
+  padding-bottom: 10px;
+}
+
+.path {
+  font-size: 0;
+}
+
+.path__item {
+  display: inline-block;
+  position: relative;
+}
+
+.path__item::before {
+  content: '/';
+  font-size: 13px;
+  line-height: 24px;
+  color: #6c6a6a;
+  padding: 0 5px;
+}
+
+.path__item:first-child::before {
+  display: none;
+}
+
+.path span:hover {
+  color: #6c6a6a;
+}
+
+.path__link {
+  color: #6c6a6a;
+  font-size: 13px;
+  line-height: 24px;
+}
+
+.path__link:hover {
+  color: #e0222d;
+}
+
+.sidebar {
+  padding: 20px 28px;
+  background-color: #f5f5f5;
+  width: 100%;
+  margin-top: 15px;
+}
+
+.menu__item {
+  padding: 5px 0;
+}
+
+.menu__link {
+  color: #111;
+  font-size: 16px;
+  line-height: 100%;
+}
+
+.menu__link:hover {
+  color: #e0222d;
+}
+
+.vid {
+  margin-top: 15px;
+}
+
+.vid__item {
+  height: 270px;
+  width: 100%;
+  display: block;
+  -webkit-transition: all 0.5s ease-in-out;
+  -moz-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+  margin-bottom: 24px;
+}
+
+.vid__item:hover {
+  -webkit-box-shadow: 2px 0px 21px 0px rgba(1, 2, 4, 0.35);
+  -moz-box-shadow: 2px 0px 21px 0px rgba(1, 2, 4, 0.35);
+  box-shadow: 2px 0px 21px 0px rgba(1, 2, 4, 0.35);
+}
+
+.vid__item:hover .vid__item-bottom {
+  padding-left: 21px;
+}
+
+.vid__item:hover .vid__item-bottom .categ__item-title {
+  color: #e0222d;
+}
+
+.vid__item-img {
+  display: block;
+  width: 100%;
+}
+
+.vid__item-bottom {
+  position: relative;
+  -webkit-transition: all 0.5s ease-in-out;
+  -moz-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+}
+
+.vid__item-bottom::after {
+  content: '';
+  width: 100%;
+  height: 74px;
+  display: block;
+  background-image: url(../img/figure.png);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  position: absolute;
+  top: -74px;
+  left: 0;
+  right: 0;
+}
+
+.recomend__slider {
+  margin-top: 38px;
+}
+
+.recomend__slider .slick-arrow {
+  display: none !important;
+}
+
+.recomend__slider-arrow {
+  width: 22px;
+  height: 22px;
+  display: inline-block;
+  border-radius: 50%;
+  background-color: #e0222d;
+  position: relative;
+  border: none;
+  margin: 0 7px;
+}
+
+.recomend__slider-arrow-wp {
+  font-size: 0;
+  width: 100%;
+  text-align: center;
+  padding-top: 34px;
+}
+
+.recomend__slider-prew::after {
+  content: "\f104";
+  font-family: "FontAwesome";
+  font-size: 19px;
+  color: #fcfcfc;
+  position: absolute;
+  left: 0;
+  right: 1px;
+  top: -1.5px;
+}
+
+.recomend__slider-next::after {
+  content: "\f105";
+  font-family: "FontAwesome";
+  font-size: 19px;
+  color: #fcfcfc;
+  position: absolute;
+  left: 1px;
+  right: 0;
+  top: -1.5px;
+}
+
+.recomend__slider-item {
+  text-align: center;
+}
+
+.recomend__slider-item-img {
+  display: block;
+  width: 80%;
+  margin: 0 auto;
+}
+
+.recomend__slider-item-title {
+  color: #000;
+  font-size: 17px;
+  line-height: 24px;
+  display: inline-block;
+}
+
+.recomend__slider-item-title:hover {
+  color: #000;
+}
+
+.recomend__slider-item-price {
+  color: #e0222d;
+  display: inline-block;
+  font-family: "PTSBold", sans-serif;
+  font-size: 17px;
+  line-height: 24px;
 }
