@@ -72,6 +72,26 @@
   .vid__item-bottom::after {
     display: none;
   }
+  .card__text {
+    padding-bottom: 28px;
+  }
+  .tabs__top-item {
+    width: 100%;
+  }
+  .tabs__top .active {
+    cursor: pointer;
+    display: block;
+    float: left;
+    width: 100%;
+    color: #494949;
+    background-color: transparent;
+    margin: 0;
+    padding: 0;
+    height: 54px !important;
+  }
+  .tabs__top .active::before {
+    display: none;
+  }
   /**/
 }
 
