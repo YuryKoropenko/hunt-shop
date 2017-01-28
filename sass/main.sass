@@ -606,3 +606,190 @@ body
 					left: 2px
 					top: 10px
 					border-radius: 50%
+.catalog
+	&__item
+		height: 252px
+		margin-bottom: 24px
+		background-color: #f5f5f5
+		display: block
+		&-img
+			display: inline-block
+			margin-top: 10px
+		&:hover
+			.categ__item-bottom
+				padding-left: 16px
+			.categ__item-title
+				color: #e0222d
+		&-top
+			height: 160px
+			text-align: center
+		&-img
+		&-bottom
+			@include transition(all 0.5s ease-in-out)
+.cat
+	&__item
+		height: 210px
+		margin-bottom: 24px
+		display: block
+		@include transition(all 0.5s ease-in-out)
+		padding-top: 18px
+		padding-bottom: 18px
+		&:hover
+			-webkit-box-shadow: 2px 0px 21px 0px rgba(1,2,4,0.35)
+			-moz-box-shadow: 2px 0px 21px 0px rgba(1,2,4,0.35)
+			box-shadow: 2px 0px 21px 0px rgba(1,2,4,0.35)
+			.cat__item-title
+				color: #e0222d
+		&-top
+			text-align: center
+		&-img
+			max-width: 80%
+			display: inline-block
+		&-bottom
+		&-title
+			color: #151515
+			font-size: 17px
+			display: block
+			text-align: center
+			@include transition(all 0.5s ease-in-out)
+		&-price
+			color: #151515
+			font-size: 17px
+			display: block
+			text-align: center
+			padding-top: 5px
+.contacts
+	&__top
+		&-name
+			color: #000
+			font-size: 18px
+			margin-left: 6px
+			display: block
+			margin-bottom: 12px
+		&-info
+			background-position: left center
+			background-repeat: no-repeat
+			color: #000
+			font-size: 20px
+			padding: 5px 0 5px 37px
+			a
+				color: #000
+				font-size: 20px
+				&:hover
+					color: #e0222d
+	&__map
+		width: 100%
+		margin-top: 24px
+		border: 2px solid #ecf5ff
+		iframe
+			width: 100% !important
+			display: block
+			height: 392px !important
+.askaquestion
+	border: 1px solid #e0222d
+	@extend .clearfix
+	padding: 48px 60px
+	margin-top: 52px
+	padding-top: 32px
+	margin-bottom: 38px
+	&__title
+		color: #000
+		font-size: 19px
+		display: block
+		width: 100%
+		text-align: center
+		margin-bottom: 17px
+	&__left
+		width: 50%
+		padding-right: 7.5px
+		float: left
+		position: relative
+	&__input
+		display: block
+		width: 100%
+		border: 1px solid #b2a8a9
+		border-radius: 2px
+		height: 36px
+		margin-bottom: 9px
+		-webkit-box-shadow: 0px -1px 10px 8px rgba(#d9d9da,.2)
+		-moz-box-shadow: 0px -1px 10px 8px rgba(#d9d9da,.2)
+		box-shadow: 0px -1px 10px 8px rgba(#d9d9da,.2)
+		padding-left: 47px
+		&-icon
+			&-1
+				&::before
+					content: ''
+					width: 41px
+					height: 36px
+					background-color: transparent
+					position: absolute
+					border: 1px solid #b2a8a9
+					border-radius: 2px 0 0 2px
+					top: 0
+					left: 0
+					display: block
+				&::after
+					content: "\f007"
+					font-family: FontAwesome
+					font-size: 16px
+					color: #818080
+					position: absolute
+					left: 15px
+					top: 9px
+			&-2
+				&::before
+					content: ''
+					width: 41px
+					height: 36px
+					background-color: transparent
+					position: absolute
+					border: 1px solid #b2a8a9
+					border-radius: 2px 0 0 2px
+					top: 45px
+					left: 0
+					display: block
+				&::after
+					content: "\f0e0"
+					font-family: FontAwesome
+					font-size: 16px
+					color: #818080
+					position: absolute
+					left: 15px
+					top: 54px
+	&__right
+		width: 50%
+		padding-left: 7.5px
+		float: right
+	&__textarea
+		display: block
+		width: 100%
+		border: 1px solid #b2a8a9
+		border-radius: 2px
+		height: 81px
+		margin-bottom: 9px
+		-webkit-box-shadow: 0px -1px 10px 8px rgba(#d9d9da,.2)
+		-moz-box-shadow: 0px -1px 10px 8px rgba(#d9d9da,.2)
+		box-shadow: 0px -1px 10px 8px rgba(#d9d9da,.2)
+		padding: 10px 14px
+		resize: none
+	&__bottom
+		clear: left
+		text-align: center
+		padding-top: 12px
+	&__button
+		display: inline-block
+		padding: 0 88px
+		height: 44px
+		background-color: #e0222d
+		border: 1px solid #e0222d
+		color: #fefefd
+		font-size: 17px
+		font-family: "PTSBold", sans-serif
+		line-height: 44px
+		border-radius: 2px
+		@include transition(all 0.5s ease-in-out)
+		&:hover
+			background-color: transparent
+			color: #e0222d
+.contacts__top
+	margin-top: -25px
