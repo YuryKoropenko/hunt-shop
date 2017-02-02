@@ -19,6 +19,15 @@
   .catalog__item-top {
     height: 168px;
   }
+  .cup__input-wp {
+    width: 184px;
+  }
+  .cup__button-wp {
+    width: 175px;
+  }
+  .cup__itog {
+    width: 207px;
+  }
   /**/
 }
 
@@ -66,6 +75,82 @@
   }
   .contacts__top {
     margin-top: 15px;
+  }
+  .corz__item {
+    height: 276px;
+    padding: 0 50px;
+  }
+  .corz__item-img-wp {
+    width: 100%;
+    float: none;
+  }
+  .corz__item-img {
+    left: 50%;
+    margin-left: -43px;
+  }
+  .corz__item-name-wp {
+    float: none;
+    width: 100%;
+    height: 60px;
+  }
+  .corz__item-name {
+    width: 100%;
+    text-align: center;
+  }
+  .corz__item-quantity {
+    float: none;
+    width: 142px;
+    margin: 0 auto;
+    padding-top: 0;
+  }
+  .corz__item-price-wp {
+    float: none;
+    width: 100%;
+  }
+  .corz__item-price {
+    width: 100%;
+    text-align: center;
+    line-height: 60px;
+  }
+  .cup__text-wp {
+    width: 100%;
+    float: none;
+    height: 60px;
+  }
+  .cup__text {
+    display: block;
+    width: 100%;
+    text-align: center;
+    line-height: 60px;
+  }
+  .cup__input-wp {
+    width: 238px;
+    margin: 0 auto;
+    float: none;
+    padding-top: 0;
+  }
+  .cup__input {
+    margin: 0;
+  }
+  .cup__button-wp {
+    width: 207px;
+    margin: 0 auto;
+    float: none;
+    padding: 0;
+    margin-top: 20px;
+  }
+  .cup__itog {
+    width: 100%;
+    text-align: center;
+    height: 60px;
+  }
+  .corz__bottom {
+    padding-right: 0;
+    text-align: center;
+  }
+  .pagination {
+    padding-left: 0;
+    text-align: center;
   }
   /**/
 }
@@ -144,6 +229,12 @@
   }
   .askaquestion {
     padding: 20px 26px 35px;
+  }
+  .cup__input-wp {
+    width: 100%;
+  }
+  .cup__button-wp {
+    width: 100%;
   }
   /**/
 }
