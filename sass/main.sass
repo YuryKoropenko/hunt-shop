@@ -1015,6 +1015,49 @@ body
 		font-size: 16px
 		&-wp
 			padding-top: 10px
+	&__img
+		display: block
+		&-wp
+			padding-top: 20px
+	&__list
+		padding-bottom: 16px
+		&-item
+			padding-left: 25px
+			position: relative
+			display: block
+			color: #080808
+			font-size: 14px
+			line-height: 22px
+			&::before
+				content: ''
+				width: 5px
+				height: 5px
+				background-color: #424242
+				position: absolute
+				left: 4px
+				top: 10px
+				display: block
+	&__ago
+		color: #0c0c0c
+		font-size: 15px
+		padding-left: 11px
+		position: relative
+		&::before
+			content: "\f104"
+			position: absolute
+			font-family: FontAwesome
+			left: 0
+			top: 0
+			display: block
+			color: #626263
+			font-size: 19px
+			line-height: 100%
+		&:hover
+			color: #161997
+			&::before
+				color: #161997
+		&-wp
+			padding-top: 16px
 .pagination
 	font-size: 0
 	padding-top: 54px
@@ -1074,3 +1117,146 @@ body
 			top: 50%
 			transform: translateY(-50%)
 			font-size: 19px
+.single-news
+	padding-top: 40px
+	&-wp
+		padding-bottom: 40px
+.single-vid
+	padding-bottom: 40px
+	&__img
+		&-wp
+			padding-top: 16px
+	&__title
+		text-transform: uppercase
+		color: #000
+		font-size: 17px
+		font-family: "PTSBold", sans-serif
+		&-wp
+			padding-top: 16px
+	&__description
+		color: #000
+		font-size: 14px
+		line-height: 22px
+		&-wp
+			padding-top: 16px
+.recomend-reading
+	&__title
+		text-transform: uppercase
+		color: #0e0e0e
+		font-size: 15px
+		font-family: "PTSBold", sans-serif
+		&-wp
+			margin-bottom: -20px
+	.blog__title
+		color: #161997
+	.blog__item
+		&:last-child
+			border: none
+			padding-bottom: 16px
+.single-vid-wp
+	padding-bottom: 40px
+	.blog__ago-wp
+		padding-top: 0
+.order
+	&__top
+		border: 1px solid #dcd9d9
+		border-radius: 2px
+		padding: 35px 37px 57px 0
+		margin-bottom: 40px
+	&__title
+		color: #0b0b0b
+		font-size: 20px
+		font-family: "PTSBold", sans-serif
+		&-wp
+			padding-bottom: 30px
+	&__center
+		&-title
+			color: #101010
+			font-size: 20px
+			font-family: "PTSBold", sans-serif
+			&-wp
+				padding-bottom: 16px
+		.cup__itog
+			width: 100%
+	&__data
+		@extend .clearfix
+		&-left
+			float: left
+			width: 50%
+		&-right
+			float: right
+			width: 50%
+		&-item
+			width: 100%
+			@extend .clearfix
+			margin-bottom: 10px
+			padding-left: 37px
+			&-text
+				color: #0b0b0b
+				font-size: 17px
+				float: left
+				line-height: 48px
+				&-obl
+					&::after
+						content: '*'
+						color: #3c5a98
+						font-size: 21px
+			&-input
+				display: block
+				height: 48px
+				width: 348px
+				border: 1px solid #cbcaca
+				border-radius: 2px
+				padding-left: 10px
+				float: right
+				-webkit-box-shadow: inset 2px 2px 5px 0px rgba(0,0,0,0.16)
+				-moz-box-shadow: inset 2px 2px 5px 0px rgba(0,0,0,0.16)
+				box-shadow: inset 2px 2px 5px 0px rgba(0,0,0,0.16)
+			&-textarea
+				display: block
+				width: 348px
+				border: 1px solid #cbcaca
+				border-radius: 2px
+				padding-left: 10px
+				height: 106px
+				resize: none
+				float: right
+				-webkit-box-shadow: inset 2px 2px 5px 0px rgba(0,0,0,0.16)
+				-moz-box-shadow: inset 2px 2px 5px 0px rgba(0,0,0,0.16)
+				box-shadow: inset 2px 2px 5px 0px rgba(0,0,0,0.16)
+				padding-top: 5px
+	&__process
+		padding-top: 40px
+		&-title
+			font-size: 20px
+			color: #0b0b0b
+			font-family: "PTSBold", sans-serif
+			&-wp
+		&-check
+			padding-top: 54px
+			&-item
+				padding-bottom: 26px
+			&-input
+				display: none
+			&-label
+				position: relative
+				font-size: 17px
+				color: #0b0b0b
+				padding: 3px 0 3px 44px
+				display: block
+				cursor: pointer
+				&::before
+					content: ''
+					width: 28px
+					height: 28px
+					border: 2px solid #dcd9d9
+					display: block
+					border-radius: 2px
+					position: absolute
+					left: 0
+					top: 0
+.order__process-check-input:checked + .order__process-check-label:before
+	content: ''
+	background-image: url(../img/check.png)
+	background-repeat: no-repeat
+	background-position: 2px center
