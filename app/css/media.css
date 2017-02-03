@@ -28,6 +28,12 @@
   .cup__itog {
     width: 207px;
   }
+  .order__data-item-input {
+    width: 280px;
+  }
+  .order__data-item-textarea {
+    width: 280px;
+  }
   /**/
 }
 
@@ -158,6 +164,19 @@
   .single-vid__img {
     display: inline-block;
   }
+  .order__data-item-input {
+    width: 100%;
+  }
+  .order__data-item-textarea {
+    width: 100%;
+    height: 157px;
+  }
+  .order__center .corz__item:last-child {
+    height: 114px;
+  }
+  .basket__popup {
+    top: 63px;
+  }
   /**/
 }
 
@@ -218,6 +237,77 @@
   .blog__img-wp {
     width: 100%;
   }
+  .order__process-title-wp {
+    width: 280px;
+    margin: 0 auto;
+  }
+  .order__requisites-row-textarea {
+    width: 100%;
+  }
+  .basket__popup {
+    left: 0;
+    right: 0;
+    width: 100%;
+  }
+  .basket__popup-item {
+    height: 213px;
+    padding: 15px 0;
+  }
+  .basket__popup-img-wp {
+    width: 100%;
+    height: 78px;
+  }
+  .basket__popup-img {
+    margin: 0 auto;
+    position: static;
+    transform: none;
+  }
+  .basket__popup-name-wp {
+    width: 100%;
+    text-align: center;
+    height: auto;
+  }
+  .basket__popup-an {
+    position: static;
+    transform: none;
+  }
+  .basket__popup-price-wp {
+    width: 100%;
+  }
+  .basket__popup-price {
+    text-align: center;
+    line-height: 46px;
+  }
+  .basket__popup-close-wp {
+    display: none;
+  }
+  .basket__popup-corz-wp {
+    width: 100%;
+    padding-left: 0;
+    text-align: center;
+  }
+  .basket__popup-itog-wp {
+    width: 100%;
+    text-align: center;
+  }
+  .basket__popup-itog {
+    position: static;
+  }
+  .basket__popup-pp-wp {
+    padding-left: 0;
+    text-align: center;
+  }
+  .basket__popup-pp {
+    display: inline-block;
+  }
+  .basket__popup-pp::before {
+    left: 0;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+  }
   /**/
 }
 
@@ -246,6 +336,23 @@
     width: 100%;
   }
   .cup__button-wp {
+    width: 100%;
+  }
+  .order__data-left {
+    width: 100%;
+  }
+  .order__data-right {
+    width: 100%;
+  }
+  .order__top {
+    padding-top: 16px;
+    padding-bottom: 16px;
+  }
+  .order__process-title-wp {
+    width: auto;
+    margin: 0;
+  }
+  .corz__bottom-button {
     width: 100%;
   }
   /**/

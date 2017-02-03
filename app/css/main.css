@@ -1,3 +1,4 @@
+@charset "UTF-8";
 html, body, div, span, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -26,13 +27,13 @@ ol, ul {
   list-style: none;
 }
 
-.clearfix:after, .tabs__top:after, .askaquestion:after, .corz__item:after, .corz__item-quantity:after, .order__data:after, .order__data-item:after {
+.clearfix:after, .basket__popup-item:after, .basket__popup-row:after, .tabs__top:after, .askaquestion:after, .corz__item:after, .corz__item-quantity:after, .order__data:after, .order__data-item:after {
   content: '';
   display: table;
   clear: both;
 }
 
-.clearfix:before, .tabs__top:before, .askaquestion:before, .corz__item:before, .corz__item-quantity:before, .order__data:before, .order__data-item:before {
+.clearfix:before, .basket__popup-item:before, .basket__popup-row:before, .tabs__top:before, .askaquestion:before, .corz__item:before, .corz__item-quantity:before, .order__data:before, .order__data-item:before {
   content: '';
   display: table;
 }
@@ -121,6 +122,7 @@ body {
 .basket {
   width: 100%;
   padding-top: 12px;
+  position: relative;
 }
 
 .basket__link {
@@ -147,6 +149,184 @@ body {
   line-height: 23px;
   left: 7px;
   top: 9px;
+}
+
+.basket__popup {
+  width: 570px;
+  position: absolute;
+  top: 52px;
+  right: 0;
+  border: 1px solid #e0222d;
+  border-radius: 2px;
+  background-color: #fff;
+  z-index: 999;
+  padding-bottom: 16px;
+  padding-top: 16px;
+  display: none;
+}
+
+.basket__popup-item {
+  height: 95px;
+  border-bottom: 1px solid #dedede;
+  margin-left: 30px;
+  margin-right: 30px;
+}
+
+.basket__popup-img {
+  width: 78px;
+  height: auto;
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.basket__popup-img-wp {
+  position: relative;
+  height: 95px;
+  float: left;
+  width: 21.20623%;
+}
+
+.basket__popup-name {
+  display: inline-block;
+  color: #151515;
+  font-size: 18px;
+  font-family: "PTSBold", sans-serif;
+  line-height: 24px;
+}
+
+.basket__popup-name:hover {
+  color: #151515;
+}
+
+.basket__popup-name-wp {
+  position: relative;
+  height: 95px;
+  float: left;
+  width: 52.72374%;
+}
+
+.basket__popup-an {
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.basket__popup-art {
+  display: block;
+  color: #626161;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.basket__popup-price {
+  line-height: 95px;
+  color: #151515;
+}
+
+.basket__popup-price-wp {
+  height: 95px;
+  width: 19.45525%;
+  float: left;
+}
+
+.basket__popup-close {
+  font-size: 30px;
+  color: #1c1c1c;
+  line-height: 95px;
+}
+
+.basket__popup-close:hover {
+  color: #151515;
+}
+
+.basket__popup-close-wp {
+  width: 2.72374%;
+  float: right;
+  height: 95px;
+  position: relative;
+}
+
+.basket__popup-corz {
+  height: 48px;
+  width: 204px;
+  line-height: 46px;
+  border: 1px solid #e0222d;
+  background-color: #e0222d;
+  color: #fefefd;
+  text-align: center;
+  display: inline-block;
+  font-family: "PTSBold", sans-serif;
+  font-size: 17px;
+  border-radius: 2px;
+  -webkit-transition: all 0.5s ease-in-out;
+  -moz-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+}
+
+.basket__popup-corz:hover {
+  background-color: transparent;
+  color: #e0222d;
+}
+
+.basket__popup-corz-wp {
+  width: 50%;
+  float: left;
+  padding-left: 10px;
+}
+
+.basket__popup-itog {
+  line-height: 48px;
+  position: absolute;
+  right: 25.4%;
+  color: #151515;
+  font-size: 17px;
+  font-family: "PTSBold", sans-serif;
+}
+
+.basket__popup-itog span {
+  display: inline-block;
+  margin-left: 30px;
+}
+
+.basket__popup-itog-wp {
+  width: 50%;
+  float: right;
+  position: relative;
+}
+
+.basket__popup-row {
+  padding: 20px 30px 16px;
+}
+
+.basket__popup-pp {
+  color: #3c5a98;
+  font-size: 16px;
+  line-height: 24px;
+  position: relative;
+  padding-left: 12px;
+}
+
+.basket__popup-pp:hover {
+  color: #3c5a98;
+}
+
+.basket__popup-pp::before {
+  content: "\f104";
+  font-family: "FontAwesome";
+  font-size: 19px;
+  color: #3c5a98;
+  position: absolute;
+  left: 0;
+  right: 1px;
+  top: -1.5px;
+}
+
+.basket__popup-pp-wp {
+  padding-left: 54px;
 }
 
 .nav {
@@ -1745,7 +1925,7 @@ body {
   -webkit-box-shadow: inset 2px 2px 5px 0px rgba(0, 0, 0, 0.16);
   -moz-box-shadow: inset 2px 2px 5px 0px rgba(0, 0, 0, 0.16);
   box-shadow: inset 2px 2px 5px 0px rgba(0, 0, 0, 0.16);
-  padding-top: 5px;
+  padding: 5px 10px;
 }
 
 .order__process {
@@ -1759,7 +1939,7 @@ body {
 }
 
 .order__process-check {
-  padding-top: 54px;
+  padding-top: 40px;
 }
 
 .order__process-check-item {
@@ -1791,9 +1971,99 @@ body {
   top: 0;
 }
 
+.order__requisites {
+  padding-top: 40px;
+}
+
+.order__requisites-subtitle {
+  color: #0b0b0b;
+  display: block;
+  font-size: 18px;
+  padding-bottom: 16px;
+  padding-top: 26px;
+}
+
+.order__requisites-row-title {
+  color: #0b0b0b;
+  font-size: 16px;
+  font-family: "PTSBold", sans-serif;
+  padding-bottom: 16px;
+  display: block;
+}
+
+.order__requisites-row-textarea {
+  width: 510px;
+  display: block;
+  resize: none;
+  height: 180px;
+  border-radius: 2px;
+  -webkit-box-shadow: inset 2px 2px 5px 0px rgba(0, 0, 0, 0.16);
+  -moz-box-shadow: inset 2px 2px 5px 0px rgba(0, 0, 0, 0.16);
+  box-shadow: inset 2px 2px 5px 0px rgba(0, 0, 0, 0.16);
+  border: 1px solid #cbcaca;
+  padding: 5px 10px;
+}
+
+.order__requisites-input {
+  display: none;
+}
+
+.order__requisites-label {
+  font-size: 15px;
+  color: #848586;
+  padding-left: 190px;
+  display: inline-block;
+  cursor: pointer;
+  position: relative;
+  line-height: 40px;
+  margin-bottom: 16px;
+}
+
+.order__requisites-label::before {
+  content: 'Выберите файл';
+  width: 175px;
+  height: 40px;
+  border: 1px solid #a2a2a2;
+  border-radius: 2px;
+  display: block;
+  text-align: center;
+  line-height: 38px;
+  color: #565758;
+  font-size: 15px;
+  background-image: url(../img/grad.jpg);
+  background-repeat: repeat-x;
+  background-position: center center;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+.order__requisites-description {
+  color: #0b0b0b;
+  font-size: 16px;
+  line-height: 24px;
+  display: block;
+  padding-bottom: 16px;
+}
+
+.order__requisites-checkout-wp {
+  padding-top: 28px;
+}
+
 .order__process-check-input:checked + .order__process-check-label:before {
   content: '';
   background-image: url(../img/check.png);
   background-repeat: no-repeat;
   background-position: 2px center;
+}
+
+.yvio p {
+  color: #000;
+  font-size: 14px;
+  line-height: auto;
+}
+
+.yvio-wp {
+  padding-top: 16px;
+  padding-bottom: 40px;
 }

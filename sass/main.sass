@@ -58,6 +58,7 @@ body
 .basket
 	width: 100%
 	padding-top: 12px
+	position: relative
 	&__link
 		display: block
 		width: 46px
@@ -80,6 +81,134 @@ body
 			line-height: 23px
 			left: 7px
 			top: 9px
+	&__popup
+		width: 570px
+		position: absolute
+		top: 52px
+		right: 0
+		border: 1px solid #e0222d
+		border-radius: 2px
+		background-color: #fff
+		z-index: 999
+		padding-bottom: 16px
+		padding-top: 16px
+		display: none
+		&-item
+			height: 95px
+			@extend .clearfix
+			border-bottom: 1px solid #dedede
+			margin-left: 30px
+			margin-right: 30px
+		&-img
+			width: 78px
+			height: auto
+			display: block
+			position: absolute
+			left: 0
+			top: 50%
+			transform: translateY(-50%)
+			&-wp
+				position: relative
+				height: 95px
+				float: left
+				+percent(109, 514)
+		&-name
+			display: inline-block
+			color: #151515
+			font-size: 18px
+			font-family: "PTSBold", sans-serif
+			line-height: 24px
+			&:hover
+				color: #151515
+			&-wp
+				position: relative
+				height: 95px
+				float: left
+				+percent(271, 514)
+		&-an
+			position: absolute
+			left: 0
+			top: 50%
+			transform: translateY(-50%)
+		&-art
+			display: block
+			color: #626161
+			font-size: 16px
+			line-height: 24px
+		&-price
+			line-height: 95px
+			color: #151515
+			&-wp
+				height: 95px
+				+percent(100, 514)
+				float: left
+		&-close
+			font-size: 30px
+			color: #1c1c1c
+			line-height: 95px
+			&:hover
+				color: #151515
+			&-wp
+				+percent(14, 514)
+				float: right
+				height: 95px
+				position: relative
+		&-corz
+			height: 48px
+			width: 204px
+			line-height: 46px
+			border: 1px solid #e0222d
+			background-color: #e0222d
+			color: #fefefd
+			text-align: center
+			display: inline-block
+			font-family: "PTSBold", sans-serif
+			font-size: 17px
+			border-radius: 2px
+			@include transition(all 0.5s ease-in-out)
+			&:hover
+				background-color: transparent
+				color: #e0222d
+			&-wp
+				width: 50%
+				float: left
+				padding-left: 10px
+		&-itog
+			line-height: 48px
+			position: absolute
+			right: 25.4%
+			color: #151515
+			font-size: 17px
+			font-family: "PTSBold", sans-serif
+			span
+				display: inline-block
+				margin-left: 30px
+			&-wp
+				width: 50%
+				float: right
+				position: relative
+		&-row
+			@extend .clearfix
+			padding: 20px 30px 16px
+		&-pp
+			color: #3c5a98
+			font-size: 16px
+			line-height: 24px
+			position: relative
+			padding-left: 12px
+			&:hover
+				color: #3c5a98
+			&::before
+				content: "\f104"
+				font-family: "FontAwesome"
+				font-size: 19px
+				color: #3c5a98
+				position: absolute
+				left: 0
+				right: 1px
+				top: -1.5px
+			&-wp
+				padding-left: 54px
 .nav
 	font-size: 0
 	padding-top: 32px
@@ -1224,7 +1353,7 @@ body
 				-webkit-box-shadow: inset 2px 2px 5px 0px rgba(0,0,0,0.16)
 				-moz-box-shadow: inset 2px 2px 5px 0px rgba(0,0,0,0.16)
 				box-shadow: inset 2px 2px 5px 0px rgba(0,0,0,0.16)
-				padding-top: 5px
+				padding: 5px 10px
 	&__process
 		padding-top: 40px
 		&-title
@@ -1233,7 +1362,7 @@ body
 			font-family: "PTSBold", sans-serif
 			&-wp
 		&-check
-			padding-top: 54px
+			padding-top: 40px
 			&-item
 				padding-bottom: 26px
 			&-input
@@ -1255,8 +1384,80 @@ body
 					position: absolute
 					left: 0
 					top: 0
+	&__requisites
+		padding-top: 40px
+		&-subtitle
+			color: #0b0b0b
+			display: block
+			font-size: 18px
+			padding-bottom: 16px
+			padding-top: 26px
+		&-row
+			&-title
+				color: #0b0b0b
+				font-size: 16px
+				font-family: "PTSBold", sans-serif
+				padding-bottom: 16px
+				display: block
+			&-textarea
+				width: 510px
+				display: block
+				resize: none
+				height: 180px
+				border-radius: 2px
+				-webkit-box-shadow: inset 2px 2px 5px 0px rgba(0,0,0,0.16)
+				-moz-box-shadow: inset 2px 2px 5px 0px rgba(0,0,0,0.16)
+				box-shadow: inset 2px 2px 5px 0px rgba(0,0,0,0.16)
+				border: 1px solid #cbcaca
+				padding: 5px 10px
+		&-input
+			display: none
+		&-label
+			font-size: 15px
+			color: #848586
+			padding-left: 190px
+			display: inline-block
+			cursor: pointer
+			position: relative
+			line-height: 40px
+			margin-bottom: 16px
+			&::before
+				content: 'Выберите файл'
+				width: 175px
+				height: 40px
+				border: 1px solid #a2a2a2
+				border-radius: 2px
+				display: block
+				text-align: center
+				line-height: 38px
+				color: #565758
+				font-size: 15px
+				background-image: url(../img/grad.jpg)
+				background-repeat: repeat-x
+				background-position: center center
+				position: absolute
+				left: 0
+				top: 0
+		&-description
+			color: #0b0b0b
+			font-size: 16px
+			line-height: 24px
+			display: block
+			padding-bottom: 16px
+		&-checkout
+			&-wp
+				padding-top: 28px
+
 .order__process-check-input:checked + .order__process-check-label:before
 	content: ''
 	background-image: url(../img/check.png)
 	background-repeat: no-repeat
 	background-position: 2px center
+.yvio
+	p
+		color: #000
+		font-size: 14px
+		line-height: auto
+	&-wp
+		padding-top: 16px
+		padding-bottom: 40px
