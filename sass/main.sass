@@ -231,6 +231,7 @@ body
 		display: inline-block
 		font-size: 17px
 		color: #000
+		@include transition(all 0.5s ease-in-out)
 		&:hover
 			color: #e0222d
 .slider
@@ -455,6 +456,7 @@ body
 			line-height: 36px
 			font-size: 17px
 			color: #000
+			@include transition(all 0.5s ease-in-out)
 			&:hover
 				color: #e0222d
 .copy
@@ -1142,6 +1144,9 @@ body
 		color: #e0222d
 		text-decoration: underline
 		font-size: 16px
+		&:hover
+			color: #e0222d
+			text-decoration: none
 		&-wp
 			padding-top: 10px
 	&__img
@@ -1337,6 +1342,7 @@ body
 				border: 1px solid #cbcaca
 				border-radius: 2px
 				padding-left: 10px
+				padding-right: 10px
 				float: right
 				-webkit-box-shadow: inset 2px 2px 5px 0px rgba(0,0,0,0.16)
 				-moz-box-shadow: inset 2px 2px 5px 0px rgba(0,0,0,0.16)
@@ -1374,6 +1380,10 @@ body
 				padding: 3px 0 3px 44px
 				display: block
 				cursor: pointer
+				-moz-user-select: none;
+				-khtml-user-select: none;
+				-webkit-user-select: none;
+				user-select: none;
 				&::before
 					content: ''
 					width: 28px
@@ -1413,31 +1423,30 @@ body
 		&-input
 			display: none
 		&-label
+			width: 175px
+			height: 40px
+			border: 1px solid #a2a2a2
+			border-radius: 2px
+			display: inline-block
+			text-align: center
+			line-height: 38px
+			color: #565758
+			font-size: 15px
+			background-image: url(../img/grad.jpg)
+			background-repeat: repeat-x
+			background-position: center center
+			&:hover, &:active, &:focus
+				color: #565758
+			&-wp
+				padding-bottom: 16px
+		#chose_file_text
 			font-size: 15px
 			color: #848586
-			padding-left: 190px
 			display: inline-block
-			cursor: pointer
 			position: relative
 			line-height: 40px
 			margin-bottom: 16px
-			&::before
-				content: 'Выберите файл'
-				width: 175px
-				height: 40px
-				border: 1px solid #a2a2a2
-				border-radius: 2px
-				display: block
-				text-align: center
-				line-height: 38px
-				color: #565758
-				font-size: 15px
-				background-image: url(../img/grad.jpg)
-				background-repeat: repeat-x
-				background-position: center center
-				position: absolute
-				left: 0
-				top: 0
+			margin-left: 10px
 		&-description
 			color: #0b0b0b
 			font-size: 16px
