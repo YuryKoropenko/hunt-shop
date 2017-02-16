@@ -308,6 +308,11 @@
     display: -o-flex;
     display: flex;
   }
+  .card__buy-bottom-popup {
+    left: 30px;
+    right: 30px;
+    width: auto;
+  }
   /**/
 }
 

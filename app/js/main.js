@@ -22,6 +22,19 @@ $(document).ready(function() {
 		$(this).parent().parent('.basket__popup').fadeOut();
 		return false;
 	})
+/*Купить в один клик*/
+	$('.card__buy-bottom').on('click', function() {
+		$('.card__buy-bottom-popup').fadeToggle();
+		$('.card__buy-bottom-popup-top-close').on('click', function() {
+			$('.card__buy-bottom-popup').fadeOut();
+		});
+		$(document).click(function(event) {
+			if ($(event.target).closest('.card__buy-bottom-popup').length) return;
+				$('.card__buy-bottom-popup').fadeOut();
+				event.stopPropagation();
+			});
+		return false;
+	});
 
 /*Кнопка 'Выберите файл'*/
 	$(function() {
